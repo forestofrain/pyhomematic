@@ -405,6 +405,7 @@ class MotionIPV2(SensorHmIP, HelperSabotageIP):
         self.BINARYNODE.update({"MOTION_DETECTION_ACTIVE": [3], "MOTION": [3]})
         self.SENSORNODE.update({"ILLUMINATION": [3]})
         self.ATTRIBUTENODE.update({"ERROR_CODE": [0]})
+        self.EVENTNODE.update({"PRESS_SHORT": [1, 2], "PRESS_LONG": [1, 2]})
 
     def is_motion(self, channel=None):
         """ Return True if motion is detected """
